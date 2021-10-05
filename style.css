@@ -1,0 +1,32 @@
+html,
+body,
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: ffc6ff;
+}
+h2 {
+  background-color: 9bf6ff;
+  margin-top: -20rem;
+}
+
+.box {
+  font-size: 5rem;
+  background-color: 9bf6ff;
+  text-align: center;
+  margin: 5rem 4rem;
+  padding: 25rem;
+  max-width: 30%;
+  height: 50%;
+  border: 1rem solid darkslateblue;
+  box-shadow: 2rem 2rem 5rem purple;
+  border-radius: 1rem;
+}
+.rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5rem;
+}
