@@ -9,19 +9,21 @@ body,
 }
 h2 {
   background-color: 9bf6ff;
-  margin-top: -20rem;
+  margin-top: 4rem;
 }
 p {
-  margin-top: ;
+  font-family: "Crimson Text", serif;
+  margin-top: 30rem;
+  text-align: center;
+  background-color: 9bf6ff;
 }
 .box {
   font-size: 5rem;
   background-color: 9bf6ff;
+  width: 30%;
+  height: 50rem;
   text-align: center;
-  margin: 5rem 4rem;
-  padding: 25rem;
   max-width: 30%;
-  height: 50%;
   border: 1rem solid darkslateblue;
   box-shadow: 2rem 2rem 5rem purple;
   border-radius: 1rem;
@@ -61,4 +63,6 @@ p {
 }
 #box-9 {
   background-image: url(img/Cantaloupe.jpg);
+}
+.box:hover {
 }
