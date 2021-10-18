@@ -6,13 +6,26 @@ body,
   box-sizing: border-box;
   font-size: 62.5%;
   background-color: ffc6ff;
+  animation: ;
+  font-family: "Crimson Text", serif;
+}
+main {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+h1 {
+  font-size: 10rem;
+  text-align: center;
 }
 h2 {
   background-color: 9bf6ff;
   margin-top: 4rem;
 }
 p {
-  font-family: "Crimson Text", serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 30rem;
   text-align: center;
   background-color: 9bf6ff;
@@ -31,12 +44,12 @@ p {
   background-position: center;
   background-size: 300px 225px;
 }
-.rows {
+/* .rows {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin: 5rem;
-}
+} */
 #box-1 {
   background-image: url(img/ap.jpg);
 }
@@ -64,5 +77,48 @@ p {
 #box-9 {
   background-image: url(img/Cantaloupe.jpg);
 }
-.box:hover {
+#box-1:hover {
+  transform: scale(1.1) rotatex(360deg);
+  transition: 1.25s;
+}
+#box-2:hover {
+  transform: scale(1.1) rotatey(-180deg);
+  transition: 1.25s;
+}
+#box-3:hover {
+  transform: scale(1.1) rotatez(1800deg);
+  transition: 1.25s;
+}
+#box-4:hover {
+  transform: scale(1.1) skew(4deg);
+  transition: 1.25s;
+}
+#box-5:hover {
+  transform: scale(0.9) skewY(10deg);
+  transition: 1.25s;
+}
+#box-6:hover {
+  transform: scale(1.1) skewX(10deg) rotate(360deg);
+  transition: 1.25s;
+}
+#box-7:hover {
+  transform: scale(1.1) translatey(-100px);
+  transition: 1.25s;
+}
+#box-8:hover {
+  transform: scale(1.1) translatex(50px) skew(5deg);
+  transition: 1.25s;
+}
+#box-9:hover {
+  transform: scale(0.8) rotate(720deg);
+  transition: 1.25s;
+}
+@media screen and (max-width: 1080px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    width: 50%;
+  }
 }
