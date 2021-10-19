@@ -8,6 +8,18 @@ body,
   background-color: ffc6ff;
   animation: ;
   font-family: "Crimson Text", serif;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: none;
+}
+@keyframes fadeInAnimation {
+  0% {
+    background-color: white;
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 main {
   justify-content: space-evenly;
@@ -106,7 +118,7 @@ p {
   transition: 1.25s;
 }
 #box-8:hover {
-  transform: scale(1.1) translatex(50px) skew(5deg);
+  transform: scale(1.1) translatex(-50px) skew(5deg);
   transition: 1.25s;
 }
 #box-9:hover {
