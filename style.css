@@ -45,10 +45,9 @@ p {
 .box {
   font-size: 5rem;
   background-color: 9bf6ff;
-  width: 30%;
-  height: 50rem;
+  height: auto;
   text-align: center;
-  max-width: 30%;
+  width: 30%;
   border: 1rem solid darkslateblue;
   box-shadow: 2rem 2rem 5rem purple;
   border-radius: 1rem;
@@ -125,12 +124,21 @@ p {
   transform: scale(0.8) rotate(720deg);
   transition: 1.25s;
 }
-@media screen and (max-width: 1080px) {
-  main {
-    flex-direction: column;
-    align-items: center;
-  }
+
+@media (max-width: 1080px) {
   .box {
-    width: 50%;
+    width: 40%;
+  }
+}
+
+@media (max-width: 800px) {
+  .box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .box {
+    width: 80%;
   }
 }
